@@ -1,0 +1,416 @@
+.also{
+    background:#dfca9d;
+    color:black;
+    font:13px/1.4 Arial,Helvetica,sans-serif;
+
+}
+
+/*HERO FEJRESZ*/
+.hero{
+    position: relative;
+    height: 70vh;
+    background-image: url(fenti.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.hero-szoveg{
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    max-width: 90%;
+
+}
+
+
+.also-tart{
+    max-width: 1200px;
+    margin:0 auto;
+    padding:5px ;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.also-nav{
+display:flex;
+gap:16px;
+}
+
+.gal{
+    background-color: #ffffff;
+    padding: 10px 16px;
+    margin-top: 0px;
+
+}
+
+.gal-doboz{
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.gal h1{
+    font-size: 34px;
+    color:#114c6a;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.gal-racs{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: 120px;
+
+
+
+}
+
+.gal-kis, .gal-nagy{
+    border: 1px solid #e5e7eb;
+    background: #f8f9fa ;
+    cursor:pointer;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+.gal-kis:hover, .gal-nagy:hover{
+    transform:scale(1.3);
+    z-index: 10;
+    position: relative;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    border-color: #114c6a;
+}
+
+.gal-kis img, .gal-nagy img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gal-nagy{
+    grid-column:2 / span 2;
+    grid-row:2 / span 2;
+}
+
+
+.also-nav a{
+    color:black;
+    text-decoration: none;
+
+}
+
+.also-nav a:hover{
+color:#fff;
+
+}
+
+.topbar{
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background-color: #dfca9d;
+    color: black;   
+    font-size: 15px;
+}
+
+.topbar-wrap{
+    max-width: 1200px;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+
+}
+.topbar a{
+    color: black;
+}
+
+header{
+    background-color: #d4b453;
+
+}
+
+.menusav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+
+}
+
+.logo{
+    height: 30px;
+
+}
+nav{
+    display: flex;
+    gap: 30px;
+    font-weight: bold;
+
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    position: relative;
+}
+.lablec{
+    background-color: #d4b453;
+    color: white;
+    margin-top: 60px;
+    padding: 0;
+
+}
+.racs{
+    max-width: 1200px;
+    margin: 0, auto;
+    padding: 28px 16px;
+    display: grid;
+    grid-template-columns: 1fr 1.1fr 1.8fr 1fr;
+    gap: 22px;
+    align-items: start;
+}
+.logo{
+    height: 48px;
+    display: block;
+}
+
+.logo img{
+    height: 45px;
+    width: auto;
+}
+
+h4{
+    margin: 0 0 10px 0;
+    color: black;
+    font:700 14px/1.2 Arial;
+
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+link a{
+    color: teal;
+    text-decoration: none;
+    padding: 12px;
+    display: block;
+    
+}
+link:hover{
+    color: darkblue;
+}
+.kartya{
+    display: block;
+    flex-direction: column;
+    
+
+}
+
+
+
+.akartya{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+    gap: 10px;
+}
+
+.akartya img{
+    display: block;
+    height: 50px;
+    width: 50px;
+    background: #fff;
+    border: 1px solid rgba(0,0,0, 0.08);
+    border-radius: 6px;
+    padding: 4px 6px;
+    
+    
+}
+
+.ajanlatok{
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0px 16px;
+    color: #0a0a0a;
+}
+
+.ajanlatok h2{
+    margin:0 0 20 0;
+    font-size: 34;
+    text-align: center;
+
+}
+
+.kartyak{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.kkartya{
+    background-color: #ffffff;
+    margin: 1px solid #e5e7eb;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.kepen{
+    position: relative;
+}
+
+.kkartya img{
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+}
+
+.kkartya .top{
+    position: absolute;
+    left:8px;
+    bottom: 8px;
+    padding: 6px 10px;
+    font-size: 12px;
+    color: #114c6a;
+    font-weight: 700;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 6px;
+}
+
+.kkartya .szoveg{
+    padding:10px 12px 14px 12px;
+}
+
+.kkartya .cim{
+    margin: 0 0 8px 0;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.kkartya .ar{
+    margin: 0;
+    font-weight: 800;
+    color: #d91421;
+}
+
+/*Első oldal első blokk*/
+/*Első oldal második blokk*/
+/*Kiemelt ajánlatok*/
+/*Első oldal harmadik blokk*/
+/*Második oldal első blokk*/
+/*Második oldal masodik blokk*/
+/*Második oldal harmadik blokk*/
+/*Harmadik oldal első blokk*/
+/*Harmadik oldal második blokk*/
+/*Harmadik oldal harmadik blokk*/
+/*Negyedik oldal első blokk*/
+/*Negyedik oldal második blokk*/
+/*Negyedik oldal harmadik blokk*/
+/*Ötödik oldal első blokk*/
+/*Ötödik oldal második blokk*/
+/*Ötödik oldal harmadik blokk*/
+/*Hatodik oldal első blokk*/
+/*Hatodik oldal második blokk*/
+/*Hatodik oldal harmadik blokk*/
+
+/*Bemutatkozás*/
+
+.bemutatkozas{
+background-color: #ffffff;
+padding:70px 15px;
+
+}
+
+.bem-wrap{
+max-width: 1100px;
+margin:0 auto;
+display:grid;
+grid-template-columns: 1fr 1fr;
+
+align-items: center;
+gap:40px;
+color:#0a0a0a;
+
+}
+
+.bem-kep img{
+        width: 100%;
+        width: 650px;
+        height: 500px;
+        border-radius: 10px;
+        text-shadow: 0 10px 30px rgba(0,0,0, 0.15)
+        ;
+
+}
+
+.bem-szoveg{
+    
+    max-width: max-content;
+
+}
+
+.bem-szoveg h2{
+margin:0 0 18px 0;
+font-size:32px;
+color:#d4b453;
+
+
+
+
+}
+.bem-szoveg p{
+    
+    margin:0 0 14px;
+    line-height:1.5;
+    font-size:16px;
+
+
+}
+
+.bem-gomb{
+    display:inline-block;
+    margin-top: 14px;
+    padding:12px 26px;
+    color:white;
+    font-weight: bold;
+    background: #d4b453;
+    border-radius: 30px;
+
+}
+
+.bem-gomb:hover{
+    background-color:#dfca9d;
+
+
+}
+
+@media(max-width:900px){
+
+.bem-wrap{
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+}
+
+
+
+
+
+
+
+
+

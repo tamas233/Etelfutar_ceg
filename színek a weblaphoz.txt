@@ -1,0 +1,4 @@
+#212529 fekete
+background-color: #fff; fehér
+#ffc107; sárgás
+#e1cea5 Glass of bubbly
