@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="html.css">
+   <title>Ételfutar-Weboldal</title>
+<style>
+  .ajanlat{
+    background: #ffffff;
+    margin: 40px auto;
+    max-width: 840px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    display: flex;
+
+  }
+  .ajanlat img{
+    width: 360px;
+    height: 450px;
+    object-fit: cover;
+    display: block;
+
+  }
+  .ajanlat-info{
+    flex: 1;
+    padding: 30px;
+    background: #dfca9d;
+    color: black;
+
+  }
+  .ajanlat-info h2{
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: black;
+
+  }
+  .ajanlat-info p{
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: black;
+
+  }
+  .mennyiseg{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+
+  }
+  .mennyiseg button{
+    width: 45px;
+    height: 45px;
+    border: 1px solid #d4b453;
+    background: #d4b453;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.mennyiseg input{
+  width: 70px;
+  height: 45px;
+  text-align: center;
+  border: 1px solid #d4b453;
+  background: #d4b453;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 16px;
+
+}
+
+
+
+.mennyiseg input[type="number"] {
+  -webkit-appearance: textfield;     
+  -moz-appearance: textfield;        
+          appearance: textfield;    
+}
+
+
+.mennyiseg input[type="number"]::-webkit-outer-spin-button,
+.mennyiseg input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
+
+.mennyiseg input::-webkit-outer-spin-button, .mennyiseg input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+
+}
+.foglalas{
+  width: 100%;
+  padding: 16px 24px;
+  background: #ff6b35;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+
+}
+@media (max-width: 900px){
+  .ajanlat img {width: 100%; height: 250px;}
+  .ajanlat-info{padding: 20px;}
+  .ajanlat-ar{padding-left: 10px;}
+}
+
+</style>
+
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-wrap">
+<div>Ételfutár</div>
+<a href="tel.: +36 70 289 7462">+36 70 289 7462</a>
+<a href="mail to: etelfutar@gmail.com">etelfutar@gmail.com</a>
+  </div>
+</div>
+
+<header><div class="menusav">
+  <div class="logo">
+    <img src="logo.png" alt="Ételfutár">
+  </div>
+  <nav>
+  <a href="index.html">Főoldal</a>
+  <a href="Arak.html">Árak</a>
+  <a href="Etelek.html">Ételek</a>
+  <a href="Desszertek.html">Desszertek</a>
+  <a href="Kapcsolatok.html">Kapcsolatok</a>
+  <a href="Nyitvatartas.html">Nyitvatartás</a>
+  </nav>
+</div></header>
+
+<section class="gal">
+  <div class="gal-doboz">
+    <h1>Ételeink</h1>
+    <div class="gal-racs">
+      <!--1.sor-->
+      <div class="gal-kis" onclick="mutatAjanlat('ajanlat1')"><img src="galleria/Erdei-gombas-vorosboros-ozragu-burgonyafankkal.webp" alt="Erdei gombás vörösboros ozragu burgonyafánkkal."></div>
+      <div class="gal-kis" onclick="mutatAjanlat('ajanlat2')"><img src="galleria/Falusi-gulyas-szurkemarhabol-tarhonyaval.webp" alt="Falusi gulyás szürkemarhából tarhonyával"></div>
+      <div class="gal-kis" onclick="mutatAjanlat('ajanlat3')"><img src="galleria/Halcopf-lazacbol-es-fogasbol-tejszines-rakos-burgonyaval.webp" alt="Lazacból és fogásból tejszínes rákos burgonyával"></div>
+      <div class="gal-kis" onclick="mutatAjanlat('ajanlat4')"><img src="galleria/Hazias-kacsasult-parolt-kaposztaval-es-hagymas-tortbugonyaval.webp" alt="Házias kacsasült párolt káposztával és hagymás törtburgonyával"></div>
+        <!--2.sor:bal-->
+
+      <div class="gal-kis"><img src="galleria/Kacsamell-Rozsnyai-modra.webp" alt="Kacsamell Ételfutár Módra."></div>
+  <!--2.sor:jobb-->
+      <div class="gal-nagy"><img src="galleria/Kacsamell-vorosboros-almapurevel-es-kecskesajttal.webp" alt="Kacsamell vörösboros almapürével és kecskesajttal"></div>
+
+      <div class="gal-kis"><img src="galleria/Kacsatal-1-scaled.webp" alt="Kacsatál"></div>
+      <div class="gal-kis"><img src="galleria/Ropogos-kacsasult-narancsmartas.webp" alt="Rpogós kacsasült narancsmártással"></div>
+      <div class="gal-kis"><img src="galleria/Sef-kedvenc-kacsamelle-feta-sajttal-es-csipos-paprikaval-toltve-scaled.webp" alt="Kacsamell feta sajttal és csipős paprikával töltve"></div>
+      <div class="gal-kis"><img src="galleria/Szarvascomb-vadasan.zsemlegomboccal.webp" alt="Szarvascomb vadasan zsemlegomboccal"></div>
+      <div class="gal-kis"><img src="galleria/Szarvassteak-epermartassal-1-scaled.webp" alt="Szarvassteák epermártással "></div>
+      <div class="gal-kis"><img src="galleria/Szilvaval-toltott-vadkacsa-fahejas-szilvamartassal-scaled.webp" alt="Szilvával töltött vadkacsa fahéjas szilvamártással"></div>
+      <div class="gal-kis"><img src="galleria/Tiszai_lecsos_kacsa.webp" alt="Tiszai lecsós kacsa"></div>
+    </div>
+  </div>
+
+</section class="ajanlat" id="ajanlat1"><section>
+</section>
+
+<section class="ajanlat" id="ajanlat1" style="display:none;">
+<img src="galleria/Erdei-gombas-vorosboros-ozragu-burgonyafankkal.webp" alt="">
+<div class="ajanlat-info">
+  <h2>Tiszai Lecsós kacsa</h2>
+  <p>
+    <span style="font-size: 16px; color: gray; text-decoration: line-through;">6.990 Ft</span><br>
+    <span style="font-size: 32px; font-weight: bold; color: black;">5.390 Ft</span>
+  </p>
+  <p>
+    Családi kedvezményes étkezés 4+ Fő-től 35% kedvezmény a végleges számlából.<br> 2026.02.25-ig
+  </p>
+  <div class="mennyiseg">
+    <button type="button" onclick="this.parentNode.querySelector('input').stepDown()">-</button>
+    <input type="number" value="1" min="1" readonly>
+    <button type="button" onclick="this.parentNode.querySelector('input').stepUp()">+</button>
+  </div>
+  <button class="foglalas">MEGRENDELEM!</button>
+</div>
+</section>
+    <script>
+      function mutatAjanlat(id){
+        var osszes = document.querySelectorAll('.ajanlat');
+        osszes.forEach(function(el){
+          el.style.display = 'none'; 
+        });
+        var doboz =document.getElementById(id);
+        if (doboz) doboz.style.display='flex'
+      }
+    
+      
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+      function mutatAjanlat(id){
+        var osszes = document.querySelectorAll('.ajanlat');
+        osszes.forEach(function(el){
+          el.style.display = 'none'; 
+        });
+        var doboz =document.getElementById(id);
+        if (doboz) doboz.style.display='flex'
+      }
+    
+      
+    </script>
+
+    
+<footer class="lablec">
+  <div class="racs">
+    <div class="logo">
+      <h4>Ételfutár</h4>
+      <img src="logo.png" alt="Ételfutár">
+    </div>
+    <div class="info">
+      <h4>Információ</h4>
+      <ul>
+       <a href="Főoldal"></a> <li>Főoldal</li>
+        <a href="Arak"></a><li>Árak</li>
+      <a href="Nyitvatartas"></a> <li>Nyitvatartás</li>
+      </ul>
+    </div>
+    <div class="eler">
+      <h4>Elérhetőségek</h4>
+      <span>Etelfutar@gmail.com</span>
+      <span>+36 70 289 7462</span>
+      <span>Miskolc tolespeda</span>
+      <span>Budapest</span>
+    </div>
+    <div class="akartya">
+      <h4>Fizetés</h4>
+      <img src="master.svg" alt="master">
+      <img src="visa.png" alt="visa">
+      <img src="revolut.webp" alt="revolut">
+    </div>
+  </div>
+
+
+
+</footer>
+<div class="also">
+<div class="also-tart">
+<div>© 2025 Etelfutar</div>
+<nav class="also-nav">
+<a href="asd">ÁSZF</a>
+<a href="asd">Adatvédelem</a>
+<a href="asd">Céginformáció</a>
+
+</nav>
+</div>
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>
