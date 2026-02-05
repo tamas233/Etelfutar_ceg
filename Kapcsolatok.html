@@ -28,10 +28,111 @@
   <a href="Kapcsolatok.html">Kapcsolatok</a>
   <a href="Nyitvatartas.html">Nyitvatartás</a>
   </nav>
-</div></header>
-elso blokk <br>
-masodik blokk <br>
-harmadik blokk <br>
+</div>
+</header>
+
+<!----Gyakran ismételt kérdések----->
+
+<section class="ker-szakasz">
+<div class="ker-doboz">
+<h2>Gyakran ismételt kérdések</h2>
+<p class="ker-bevezeto">Összegyüjtöttük azokat a kérdéseket amelyeket a látogatóink leggyakrabban feltesznek
+</p>
+
+<div class="ker-elemek">
+<div class="ker-elem">
+<button class="ker-kerdes">Hogyan tudok rendelni az oldalon?
+<span class="ker-valtojel">➕</span>
+</button>
+<div class="ker-valasz">A rendeléshez válaszd ki a kívánt ételeket, tedd őket a kosárba, majd add meg a szállítási adatokat. A rendelést online fizetéssel vagy átvételkor is véglegesítheted.
+
+</div>
+</div>
+<div class="ker-elem">
+<button class="ker-kerdes">Mennyi idő alatt érkezik meg a rendelés?
+<span class="ker-valtojel">➕</span>
+</button>
+<div class="ker-valasz">A kiszállítás általában 30–60 percen belül történik. A pontos idő függ a forgalomtól, az elkészítési időtől és a kiszállítási címtől.
+
+
+</div>
+</div>
+
+<div class="ker-elem">
+<button class="ker-kerdes">Milyen fizetési módok közül választhatok?
+<span class="ker-valtojel">➕</span>
+</button>
+<div class="ker-valasz">Bankkártyával, online fizetéssel vagy akár készpénzzel is fizethetsz átvételkor.
+
+
+</div>
+</div>
+
+<div class="ker-elem">
+<button class="ker-kerdes">Van lehetőséged előrendelésre vagy időzített kiszállításra?
+<span class="ker-valtojel">➕</span>
+</button>
+<div class="ker-valasz">Igen, rendeléskor kiválaszthatod a kívánt kiszállítási időpontot, így az étel akkor érkezik meg, amikor számodra a legmegfelelőbb.
+
+
+</div>
+</div>
+
+<div class="ker-elem">
+<button class="ker-kerdes">Mit tehetek, ha problémám van a rendeléssel?
+<span class="ker-valtojel">➕</span>
+</button>
+<div class="ker-valasz">Ha bármilyen gond merül fel, vedd fel velünk a kapcsolatot az ügyfélszolgálaton keresztül, és munkatársaink gyorsan segítenek a megoldásban.
+
+</div>
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <div class="also">
@@ -76,6 +177,23 @@ harmadik blokk <br>
 </footer>
 
 
+<script>
+document.querySelectorAll(".ker-elem").forEach(function(elem){
+const gomb = elem.querySelector(".ker-kerdes");
+gomb.addEventListener("click",function(){
+document.querySelectorAll(".ker-elem").forEach(function(masik){
+if(masik !== elem) masik.classList.remove("aktiv");
+});
+elem.classList.toggle("aktiv");
+});
+});
+
+
+
+
+
+
+</script>
 
 
 
